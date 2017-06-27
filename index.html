@@ -42,7 +42,7 @@
             color: #FFF;
         }
         section {
-            padding:25px;
+            padding:30px;
             background-color: #DDD;
         }
         .one {
@@ -81,6 +81,9 @@
         }
         .form-control:-moz-placeholder { /* Firefox 18- */
           color: #BBB;
+        }
+        #projects img {
+            margin-bottom:20px;
         }
     </style>
 
@@ -124,23 +127,54 @@
     <section id="projects" class="one">
         <div class="container">
             <h2>Previous Projects</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur cursus, enim in vulputate consequat, leo nibh ornare dolor, nec rutrum nunc ipsum eget lorem. Aenean sagittis sapien eget urna ultricies, in convallis neque imperdiet. Curabitur quis luctus enim, nec maximus dolor. Duis ornare est at magna mollis, quis faucibus nisl congue.</p>
+            <div class="row">
+                <div class="col-sm-4 text-center">
+                    <a href="#" data-toggle="modal" data-target="#modalcustomguide">
+                        <img src="assets/images/logo-customguide.png" class="img-fluid rounded" alt="CustomGuide CLMS4">
+                    </a>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <a href="#" data-toggle="modal" data-target="#modalmicrosoft">
+                        <img src="assets/images/logo-microsoft.png" class="img-fluid rounded" alt="Microsoft Logo">
+                    </a>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <a href="#" data-toggle="modal" data-target="#modaltarget">
+                        <img src="assets/images/logo-target.png" class="img-fluid rounded" alt="Target Logo">
+                    </a>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <a href="#" data-toggle="modal" data-target="#modalsyncada">
+                        <img src="assets/images/logo-syncada.png" class="img-fluid rounded" alt="Syncada Logo">
+                    </a>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <a href="#" data-toggle="modal" data-target="#modalsocialu">
+                        <img src="assets/images/logo-socialu.png" class="img-fluid rounded" alt="SocialU">
+                    </a>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <a href="#" data-toggle="modal" data-target="#modalperficient">
+                        <img src="assets/images/logo-perficient.png" class="img-fluid rounded" alt="">
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
-    <section id="timeline">
+    <!--<section id="timeline">
         <div class="container">
             <h2>Timeline</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur cursus, enim in vulputate consequat, leo nibh ornare dolor, nec rutrum nunc ipsum eget lorem. Aenean sagittis sapien eget urna ultricies, in convallis neque imperdiet. Curabitur quis luctus enim, nec maximus dolor. Duis ornare est at magna mollis, quis faucibus nisl congue.</p>
         </div>
-    </section>
-    <section id="resume" class="two">
+    </section>-->
+    <section id="resume">
         <div class="container">
             <h2>Resume</h2>
             <p>If you're a recruiter or just interested in a hard copy of my resumé as a PDF, you can download it by clicking the button below.</p>
-            <a class="btn btn-primary btn-lg invert" href="assets/documents/stan-keathly-resume.pdf" role="button">Download PDF</a>
+            <a class="btn btn-primary btn-lg" href="sk-resume.pdf" role="button">Download PDF</a>
         </div>
     </section>
-    <section id="contact" class="clearfix">
+    <section id="contact" class="clearfix two">
         <div class="container">
             <h2>Get in Touch</h2>
             <p>If you'd like to discuss a project or simply have a query, send me a direct message using the contact form.</p>
@@ -157,10 +191,119 @@
                     <label for="skEmail">Message</label>
                     <textarea class="form-control" id="skMessage" name="skMessage" rows="5" placeholder="Enter Your Message"></textarea>
                 </div>
-                <button class="btn btn-primary btn-lg float-lg-right float-xg-right" type="submit" value="Send">Send Message</button>
+                <button class="btn btn-primary btn-lg float-lg-right float-xg-right invert" type="submit" value="Send">Send Message</button>
             </form>
         </div>
     </section>
+
+    <div class="modal fade bd-example-modal-lg" id="modalcustomguide" tabindex="-1" role="dialog" aria-labelledby="xx" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">CustomGuide</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade bd-example-modal-lg" id="modalmicrosoft" tabindex="-1" role="dialog" aria-labelledby="xx" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Microsoft</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade bd-example-modal-lg" id="modaltarget" tabindex="-1" role="dialog" aria-labelledby="xx" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Target</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade bd-example-modal-lg" id="modalsyncada" tabindex="-1" role="dialog" aria-labelledby="xx" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Syncada</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade bd-example-modal-lg" id="modalsocialu" tabindex="-1" role="dialog" aria-labelledby="xx" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">SocialU</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade bd-example-modal-lg" id="modalperficient" tabindex="-1" role="dialog" aria-labelledby="xx" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Perficient</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
