@@ -1,28 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <style>
+        body, input {
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        #particles-js {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom:0;
+            z-index: 0;
+        }
+        header {
+            position: relative;
+            z-index:4;
+        }
+        .btn {
+            background-color: transparent;
+            border-radius: 3px;
+            border: 4px solid rgba(64, 64, 64, 0.7);
+            color: #404040;
+        }
+        .btn.invert {
+            border-color: rgba(255, 255, 255, 0.7);
+            color: #FFF;
+        }
+        .btn:hover {
+            background-color: transparent;
+            color: #404040;
+            border-color: rgba(64, 64, 64, 0.9);
+        }
+        .btn.invert:hover {
+            background-color: transparent;
+            border-color: rgba(255, 255, 255, 0.9);
+            color: #FFF;
+        }
+        section {
+            padding:25px;
+            background-color: #DDD;
+        }
+        .one {
+            background-color: #01BAEF;
+            color: #FFF;
+        }
+        .two {
+            background-color: #0B4F6C;
+            color: #FFF;
+        }
+        .three {
+            background-color: #B80C09;
+            color: #FFF;
+        }
+        .jumbotron {
+            background:#333;
+            color:#FFF;
+            border-radius:0;
+            min-height:460px;
+            position: relative;
+            margin-bottom:0;
+        }
+        input.form-control, textarea.form-control {
+            padding:20px;
+            box-shadow: 0 2px 0 rgba(0,0,0,.1);
+            border: 3px solid #FFF;
+        }
+        .form-control::-webkit-input-placeholder {
+          color: #BBB;
+        }
+        .form-control::-moz-placeholder { /* Firefox 19+ */
+          color: #BBB;
+        }
+        .form-control:-ms-input-placeholder { /* IE 10+ */
+          color: #BBB;
+        }
+        .form-control:-moz-placeholder { /* Firefox 18- */
+          color: #BBB;
+        }
+    </style>
 
-	<div class="cv">
-		<a href="#" class="download" title="Download CV as PDF">Download CV</a>			
-			<h1>Hank Quinlan</h1>
-			<address>
-			<strong>Affiliation</strong><br>
-			Street Address<br>
-			City State 12345<br>
-			<abbr title="phone">P:</abbr> (123) 456-7890<br>
-			<span class="obfuscate">youremailaddress@email.com</span>
-			</address>
+  </head>
+  <body>
+    <div class="jumbotron">
+        <header class="container">
+            <h1>Mobile first web development with HTML, CSS, JavaScript, WordPress and more.</h1>
+            <p class="lead">My name is Stan Keathly. I'm a frontend developer / designer based in Minneapolis, MN and I'd like to help you build your next project.</p>
+            <p>
+                <a class="btn btn-primary btn-lg invert" href="#skills" role="button">Learn more</a>
+            </p>
+        </header>
+        <div id="particles-js"></div>
+    </div>
+    <section id="skills">
+        <div class="container clearfix">
+            <h2>About Me</h2>
+            <div class="row">
+                <div class="col-md-8">
+                    <p>
+                        I'm a frontend developer, website designer, and web standards enthusiast. I have over 10 years of experience designing and building attractive, accesible websites and web applications for clients big and small.
+                    </p>
+                    <p>
+                        I love to learn new things and&nbsp;am constantly striving to find solutions to difficult problems. In addition, I appreciate great design and you can often find me listening to indie music and drinking a cup of joe. When I'm away from my computer, I enjoy spending time with my family.
+                    </p>
+                    <p>
+                        Please have a look around my website, and get in touch if you would like to work together on a project.</p><p>
+                    </p>
+                    <p class="hidden-xs-up">["#B80C09", "#0B4F6C", "01BAEF"]</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <img src="assets/images/selfie.jpg" class="img-fluid rounded" alt="Me">
+                    </div>
+                </div>
+            </div>
 
-			<h2>Select Publications</h2>
+        </div>
+    </section>
+    <section id="projects" class="one">
+        <div class="container">
+            <h2>Previous Projects</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur cursus, enim in vulputate consequat, leo nibh ornare dolor, nec rutrum nunc ipsum eget lorem. Aenean sagittis sapien eget urna ultricies, in convallis neque imperdiet. Curabitur quis luctus enim, nec maximus dolor. Duis ornare est at magna mollis, quis faucibus nisl congue.</p>
+        </div>
+    </section>
+    <section id="timeline">
+        <div class="container">
+            <h2>Timeline</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur cursus, enim in vulputate consequat, leo nibh ornare dolor, nec rutrum nunc ipsum eget lorem. Aenean sagittis sapien eget urna ultricies, in convallis neque imperdiet. Curabitur quis luctus enim, nec maximus dolor. Duis ornare est at magna mollis, quis faucibus nisl congue.</p>
+        </div>
+    </section>
+    <section id="resume" class="two">
+        <div class="container">
+            <h2>Resume</h2>
+            <p>If you're a recruiter or just interested in a hard copy of my resumé as a PDF, you can download it by clicking the button below.</p>
+            <a class="btn btn-primary btn-lg invert" href="assets/documents/stan-keathly-resume.pdf" role="button">Download PDF</a>
+        </div>
+    </section>
+    <section id="contact" class="clearfix">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>If you'd like to discuss a project or simply have a query, send me a direct message using the contact form.</p>
+            <form action="https://formspree.io/skeathly@gmail.com" method="POST">
+                <div class="form-group">
+                    <label for="skFullName">Full Name</label>
+                    <input type="text" class="form-control" name="skFullName" id="skFullName" aria-describedby="nameHelp" placeholder="Enter Full Name">
+                </div>
+                <div class="form-group">
+                    <label for="skEmail">Email address</label>
+                    <input type="email" class="form-control" name="skEmail" id="skEmail" aria-describedby="emailHelp" placeholder="Enter Email Address">
+                </div>
+                <div class="form-group">
+                    <label for="skEmail">Message</label>
+                    <textarea class="form-control" id="skMessage" name="skMessage" rows="5" placeholder="Enter Your Message"></textarea>
+                </div>
+                <button class="btn btn-primary btn-lg float-lg-right float-xg-right" type="submit" value="Send">Send Message</button>
+            </form>
+        </div>
+    </section>
 
-			<p><strong>Last Name, F.</strong> (204). Title of a Chapter You Wrote for a Book. In I.M Editor (Ed.), <em>The Book I Contributed To</em> (pp. 97-108). City, ST: Publisher Name. Chapter available at: <a href="#">http://permalink</a>.
-	</div>
-	
-</body>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'particles.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
+
+  </body>
 </html>
-
-
