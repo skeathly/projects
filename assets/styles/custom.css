@@ -74,8 +74,17 @@ input.form-control, textarea.form-control {
 .form-control:-moz-placeholder { /* Firefox 18- */
   color: #BBB;
 }
-#projects img {
+#projects a {
     margin-bottom:20px;
+}
+#projects a:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+p.role .spacer {
+    color:#BBB;
+    width: 20px;
+    display: inline-block;
+    text-align: center;
 }
 .modal img {
     border:2px solid #CCC;
