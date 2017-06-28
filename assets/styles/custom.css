@@ -92,3 +92,6 @@ p.role .spacer {
     border:2px solid #CCC;
     margin-bottom:15px;
 }
+#contact button.btn {
+    cursor:pointer;
+}
