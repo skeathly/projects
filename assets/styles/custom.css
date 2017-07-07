@@ -95,3 +95,12 @@ p.role .spacer {
 #contact button.btn {
     cursor:pointer;
 }
+.scroll-line  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background: #B80C09;
+    z-index: 10;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) width;
+}
