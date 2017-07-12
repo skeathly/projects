@@ -88,7 +88,7 @@ p.role .spacer {
     display: inline-block;
     text-align: center;
 }
-.modal img {
+.carousel {
     border:2px solid #CCC;
     margin-bottom:15px;
 }
@@ -103,4 +103,31 @@ p.role .spacer {
     background: #B80C09;
     z-index: 10;
     transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) width;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23333333' viewBox='0 0 8 8'%3E%3Cpath d='M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E")
+}
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23333333' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+.carousel-indicators > li {
+    background-color:#999;
+}
+.carousel-indicators > li.active {
+    background-color:#333;
+}
+.carousel-caption p {
+    background-color: rgba(0,0,0,0.6);
+    color: #CCC;
+    padding: 6px;
+}
+
+/* Carousel Fix */
+@media only screen and (max-width: 990px) {
+    .carousel-item.active,
+    .carousel-item-next,
+    .carousel-item-prev {
+      display: block;
+    }
 }
