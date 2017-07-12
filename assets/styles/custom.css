@@ -27,6 +27,7 @@ header {
     background-color: transparent;
     color: #404040;
     border-color: rgba(64, 64, 64, 0.9);
+    cursor: pointer;
 }
 .btn.invert:hover {
     background-color: transparent;
